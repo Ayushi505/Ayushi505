@@ -1,25 +1,30 @@
 package basics;
 
-import java.util.Scanner;
-class Main {
+public class Main {
+
     public static void main(String[] args) {
-        Scanner myObj = new Scanner(System.in);
-        String number;
-
-        System.out.println("Enter number");
-        number = myObj.nextLine();
-//        System.out.println("number is: " + number);
-        int a;
-        a=Integer.parseInt(number);
-        if (a == 0) {
-            System.out.println("neither even nor odd");
-            if (a % 2 == 0 && a > 0)
-                System.out.println("even");
+        int count = 1;
+        while(count != 6)
+        {
+            System.out.println("Count vaue is " + count);
+            count++;
         }
-        else{
-            if(a>0)
-            System.out.println("odd");}
+//        for(int i=1; i<=7; i++)
+//        {
+//            System.out.println("Count value is " + count);
+//        }
+//        for(count = 1; count != 6; count++ )
+//        {
+//            System.out.println("Count value is " + count);
+//        }
 
-
+        count = 1;
+        while(true) {
+            if(count == 6){
+                break;
+            }
+            System.out.println("Count value is " + count);
+            count++;
+        }
     }
 }
